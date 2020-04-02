@@ -1,0 +1,25 @@
+.card{
+  background-color: cornflowerblue;
+  color: white;
+  padding: 20px 37px;
+  text-align: center;
+  display: inline-block;
+  font-size: 21px;
+  border-style: line;
+  border-width: thick;
+  border-color: black;
+  width: 300px;
+  height: 250px;
+}
+
+.header {
+  color: yellow;
+  font-size: 30px;
+
+}
+
+.body {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
