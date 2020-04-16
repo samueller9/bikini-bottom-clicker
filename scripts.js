@@ -24,30 +24,30 @@
   ********************************/
 
     //declare default variables
-    let clickPower = 1;
+let clickPower = 1;
 
     //default variables
-    let clickPowerPriceAmount = 50;
-    let clickPowerLevelNumber = 1;
+let clickPowerPriceAmount = 50;
+let clickPowerLevelNumber = 1;
 
     //declare DOM variables
-    let buyClickPower = document.getElementById('buy-click-power');
-    let clickPowerPrice = document.getElementById('click-power-price');
-    let clickPowerLevel = document.getElementById('click-power-level');
-    let clickPowerMultiple = document.getElementById('click-power-multiple');
+let buyClickPower = document.getElementById('buy-click-power');
+let clickPowerPrice = document.getElementById('click-power-price');
+let clickPowerLevel = document.getElementById('click-power-level');
+let clickPowerMultiple = document.getElementById('click-power-multiple');
 
     //Buy click power
-    buyClickPower.addEventListener("click", function() {
-      if (cookieCount >= clickPowerPriceAmount) {
-        console.log("Item succesfully Bought");
-      } else {
-        console.log("You don't have enough cookies!");
-      }
+buyClickPower.addEventListener("click", function() {
+  if (cookieCount >= clickPowerPriceAmount) {
+    console.log("Item succesfully Bought");
+  } else {
+    console.log("You don't have enough cookies!");
+  }
 
       //update Click Power
-      clickPower += 1 * Math.floor(clickPowerLevelNumber * 1.05);
+  clickPower += 1 * Math.floor(clickPowerLevelNumber * 1.05);
 
-    if (cookieCount >= clickPowerPriceAmount) {
+if (cookieCount >= clickPowerPriceAmount) {
       //subtract cookies from the price of the item
       cookieCount -= clickPowerPriceAmount;
       //update cookie counter.
